@@ -1,0 +1,242 @@
+@font-face {
+	font-family:'Reactor7';
+		src:url('font/Reactor7.eot');
+		src:url('font/Reactor7.eot?#iefix') format('embedded-opentype'),
+				url('font/Reactor7.woff') format('woff'),
+				url('font/Reactor7.ttf') format('truetype'),
+				url('font/Reactor7.svg#Reactor7') format('svg');
+	font-weight:normal;
+	font-style:normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	@font-face {
+		font-family:'Reactor7';
+		src: url('font/Reactor7.svg') format('svg');
+		font-weight:normal;
+		font-style:normal;
+	}
+}
+
+html, body {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+body {
+  background: url(media/bg.png) no-repeat #000;
+  background-size: cover;
+}
+
+p.character {
+	display: block;
+	margin-top: 0;
+	margin-bottom: 10px;
+	line-height: 26px;
+}
+p.text {
+	margin: 0;
+	text-indent: -.75em;
+	margin-left: .75em;
+	line-height: 30px;
+}
+ul {
+	margin: 0 0 5px;
+	padding: 0;
+	list-style: none;
+}
+ul li {
+	margin-top: 10px;
+	padding-left: 65px;
+	position: relative;
+	line-height: 26px;
+}
+ul li.selected:before {
+	content: "";
+	display: block;
+	height: 45px;
+	background: url(media/pointer.png);
+	width: 138px;
+	position: absolute;
+	left: -12px;
+	background-size: 65px;
+	background-repeat: no-repeat;
+	top: 2px;
+}
+span.ellipsis {
+	letter-spacing: -5px;
+}
+span.location {
+	color: #02F9FF;
+}
+span.input {
+	color: #F400E9;
+}
+.dialogue {
+  position: relative;
+  width: fit-content;
+  width: -moz-fit-content;
+  padding: 13px 15px 10px;
+  color: #fff;
+  font-family: 'Reactor7';
+  background: linear-gradient(135deg, #0054ae 0%, #020884 50%, #000024 100%);
+  border: #fff 2px solid;
+  border-radius: 6px;
+  margin-top: 50px;
+  margin-left: 50px;
+  opacity: 1;
+  font-size: 32px;
+}
+.dialogue:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  border: #999999 2px solid;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+.dialogue.clear {
+	background: linear-gradient(135deg, rgba(0,84,174,.3) 0%, rgba(2,8,132,.3) 50%, rgba(0,0,36,.3) 100%);
+}
+.dialogue.item {
+	margin-left: 50%;
+	margin-top: 30px;
+  transform: translateX(-50%);
+}
+.dialogue.item .character {
+	margin-bottom: 0;
+}
+.dialogue.full {
+	margin: 0;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border-color: rgba(0,0,0,0);
+	background: none;
+}
+.dialogue.full:after {
+	border-color: rgba(0,0,0,0);
+}
+#typed {
+	position: absolute;
+  top: 13px;
+  width: calc(100% - 30px);
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5);
+}
+#layout-text {
+	text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5);
+	opacity: 0;
+}
+.overlay {
+	background: #000;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0.9;
+}
+
+.load {
+	opacity: 0;
+}
+
+#timer {
+	position: absolute;
+  bottom: 10px;
+  right: 10px;
+  height: 142px;
+  display: flex;
+  transform: scale(.5);
+  transform-origin: right bottom;
+}
+
+.didget {
+	width: 108px;
+	height: 142px;
+	background: url(media/0-9.png) no-repeat;
+}
+.number-0 {
+	background-position: 0 0;
+}
+.number-1 {
+	background-position: -108px 0;
+}
+.number-2 {
+	background-position: -216px 0;
+}
+.number-3 {
+	background-position: -324px 0;
+}
+.number-4 {
+	background-position: -432px 0;
+}
+.number-5 {
+	background-position: 0 -142px;
+}
+.number-6 {
+	background-position: -108px -142px;
+}
+.number-7 {
+	background-position: -216px -142px;
+}
+.number-8 {
+	background-position: -324px -142px;
+}
+.number-9 {
+	background-position: -432px -142px;
+}
+#colon {
+	width: 54px;
+	height: 142px;
+	background: url(media/colon.png) no-repeat;
+	background-position: 0 0;
+}
+#colon.blink {
+	background-position: -54px 0;
+}
+
+@media only screen and (max-width: 600px) {
+	.dialogue {
+		margin-top: 20px;
+		margin-left: 20px;
+		font-size: 16px;
+		padding: 6px 10px 5px;
+	}
+
+	p.character {
+		line-height: 16px;
+		margin-bottom: 3px;
+	}
+	p.text {
+		line-height: 16px;
+	}
+
+	#typed {
+		top: 6px;
+		width: calc(100% - 20px);
+	}
+
+	ul li {
+		margin-top: 3px;
+		line-height: 16px;
+		padding-left: 35px;
+	}
+
+	ul li.selected:before {
+		background-size: 35px;
+		left: -6px;
+		height: 20px;
+		width: 40px;
+	}
+
+	span.ellipsis {
+	    letter-spacing: -3px;
+	}
+}

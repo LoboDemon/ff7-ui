@@ -1,0 +1,119 @@
+[
+	{
+		"name" : "Cloud",
+		"text" : "I'm not a hero and I'm not famous.<br>So I can't keep our promise."
+	},
+	{
+		"name" : "Cloud",
+		"text" : "I do what needs to be done."
+	},
+	{
+		"name" : "Sephiroth",
+		"text" : "Out of my way.<br>I'm going to see my mother."
+	},
+	{
+		"name" : "Barret",
+		"text" : "Where's its $#&amp;*&amp;@ head? <br>This whole thing's stupid.<br>Let's keep goin'."
+	},
+	{
+		"name" : "Biggs",
+		"text" : "I didn't catch your name..."
+	},
+	{
+		"name" : "Reno",
+		"text" : "You're too late.<br>Once I push this button..."
+	},
+	{
+		"name" : "Cid",
+		"text" : "We got guests!!<br>GET SOME TEA! ^%$#!"
+	},
+	{
+		"name" : "Cloud",
+		"text" : "All right, everyone, let's mosey."
+	},
+	{
+		"name" : "Aeris",
+		"text" : "This guy are sick."
+	},
+	{
+		"name" : "Cait Sith",
+		"text" : "Both Gya haha and Kya haha<br>are up to something."
+	},
+	{
+		"name" : "Aeris",
+		"text" : "I'll see you later!!<br>We'll be waiting at the <span class='location'>66th Floor Elevator</span>."
+	},
+	{
+		"name" : "Flower girl", 
+		"text" : "What happened?", 
+		"options" : [
+			"You'd better get out of here",
+			"Nothing...hey..."
+		]
+	},
+	{
+		"name" : "Tifa", 
+		"text" : "Did you play my piano?", 
+		"options" : [
+			"No, I didn't",
+			"Yeah, I jammed on it",
+			"Just a little..."
+		]
+	},
+	{
+		"text" : "C'mon newcomer.<br>Follow me."
+	},
+	{
+		"text" : "Did you sleep well?",
+		"options" : [
+			"Barret's snoring kept me up...",
+			"Next to you, who wouldn't?"
+		]
+	},
+	{
+		"text"  : "So, what's the password?",
+		"options" : [
+			"BEST",
+			"KING",
+			"ORBS",
+			"BOMB",
+			"MAKO",
+			"HOJO",
+			"Wait a second"
+		]
+	},
+	{
+		"name"  : "Tifa", 
+		"text"  : "The only truck in town.<br>It's been here since we were little kids, right?",
+		"style" : "clear"
+	},
+	{
+		"name"  : "Cloud", 
+		"text"  : "Yeah...this is...me.",
+		"style" : "clear"
+	},
+	{
+		"name"  : "Received \" All \" Materia !",
+		"style" : "item"
+	},
+	{
+		"name"  : "Received \" Potion \" !",
+		"style" : "item"
+	},
+	{
+		"name"  : "Received Key Item \" Diamond Tiara \" !",
+		"style" : "item"
+	},
+	{
+		"text"  : "I will go <span class='location'>North past Mt. Nibel</span>.<br>If you wish to know...then follow..."
+	},
+	{
+		"name"  : "Jessie",
+		"text"  : "Push the <span class='input'>[OK]</span> button in front of a ladder<br>to grab on to it.<br>After that, use the <span class='input'>[Directional button]</span><br>to move up and down."
+	},
+	{
+		"name"  : "Cloud",
+		"text"  : "......What do you mean by 'back then'?",
+		"style" : "full"
+	}
+]
