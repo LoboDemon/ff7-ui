@@ -65,6 +65,9 @@ function initializeClock(endtime) {
 
     if (t.total <= 0) {
       clearInterval(timeinterval);
+      setTimeout(function(){
+    		$('body').prepend($('<div id="go"></div>').hide().fadeIn());
+    	}, 1000);
     }
   }
 
